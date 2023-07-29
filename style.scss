@@ -2,3 +2,62 @@ body
 {
     background-color: aqua;
 }
+h1
+{
+    background-color: red;
+}
+
+input[type="text"]
+{
+    background-color: green;
+}
+
+a::before
+{
+    content: "\21d2 Click Aca";
+    font-weight:bold ;
+}
+
+p::selection
+{
+    color: aqua;
+    background-color: bisque;
+}
+
+button:hover
+{
+    background-color: aquamarine;
+    margin: 3px;
+    padding: 10px;
+}
+
+@media print 
+{
+    .screen-only
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 500px)
+{
+    body {
+        background-color: green;
+    }
+    h1::before
+    {
+        content: "Hola Mundo";
+    }
+}
+
+@media (max-width: 499px)
+{
+    body {
+        background-color: red;
+    }
+    h1::before
+    {
+        content: "Hola Roco";
+    }
+
+}
